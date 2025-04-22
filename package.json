@@ -3,20 +3,27 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "build": "tsc",
-  "dev": "ts-node src/index.ts",
-  "test": "ts-node examples/test.ts"
-},
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "ts-node examples/test.ts",
+     "cli": "ts-node src/cli.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "puppeteer": "^24.6.1",
     "puppeteer-extra": "^3.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2"
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@types/node": "^22.14.1",
+    "@types/yargs": "^17.0.33",
     "typescript": "^5.8.3"
-  }
+  },
+  "bin": {
+  "amazon-search-scraper": "dist/cli.js"
+}
 }
