@@ -1,17 +1,24 @@
 {
   "name": "amazon-search-scraper",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A CLI tool and Node.js library for scraping Amazon product listings and generating affiliate links.",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "dev": "ts-node src/index.ts",
     "test": "ts-node examples/test.ts",
-     "cli": "ts-node src/cli.ts"
+    "cli": "ts-node src/cli.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "amazon",
+    "scraper",
+    "puppeteer",
+    "affiliate",
+    "search",
+    "cli"
+  ],
+  "author": "Ian O'Heir",
+  "license": "MIT",
   "dependencies": {
     "puppeteer": "^24.6.1",
     "puppeteer-extra": "^3.3.6",
@@ -24,6 +31,6 @@
     "typescript": "^5.8.3"
   },
   "bin": {
-  "amazon-search-scraper": "dist/cli.js"
-}
+    "amazon-search-scraper": "dist/cli.js"
+  }
 }
