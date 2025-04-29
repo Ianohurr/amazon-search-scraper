@@ -1,5 +1,9 @@
 📦 amazon-search-scraper
 
+# amazon-search-scraper
+
+[![npm version](https://img.shields.io/npm/v/amazon-search-scraper.svg)](https://www.npmjs.com/package/amazon-search-scraper)
+
 A simple Puppeteer-based CLI and library for scraping Amazon product listings and generating affiliate-ready product links.
 
 ✨ Features
